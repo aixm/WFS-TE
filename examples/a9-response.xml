@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timeStamp="2008-09-07T19:00:00" numberReturned="1" numberMatched="1">
+  <wfs:member>
+    <aixm:Airspace xmlns:aixm="http://www.aixm.aero/schema/5.1" gml:id="ID_1">
+      <gml:identifier codeSpace="http://www.example.org">0083defb-b42e-4417-9be2-7aba2db2674d
+      </gml:identifier>
+      <aixm:timeSlice>
+        <aixm:AirspaceTimeSlice gml:id="ID_2">
+          <gml:validTime>
+            <gml:TimeInstant gml:id="ID_3">
+              <gml:timePosition>2011-07-01T08:00:00.000Z
+              </gml:timePosition>
+            </gml:TimeInstant>
+          </gml:validTime>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:activation>
+            <aixm:AirspaceActivation gml:id="ID_4">
+              <aixm:timeInterval>
+                <aixm:Timesheet gml:id="ID_5">
+                  <aixm:timeReference>UTC+2</aixm:timeReference>
+                  <aixm:day>ANY</aixm:day>
+                  <aixm:startTime>06:00</aixm:startTime>
+                  <aixm:endTime>17:59</aixm:endTime>
+                </aixm:Timesheet>
+              </aixm:timeInterval>
+              <aixm:activity>MILOPS</aixm:activity>
+              <aixm:status>ACTIVE</aixm:status>
+            </aixm:AirspaceActivation>
+          </aixm:activation>
+        </aixm:AirspaceTimeSlice>
+      </aixm:timeSlice>
+    </aixm:Airspace>
+  </wfs:member>
+</wfs:FeatureCollection>

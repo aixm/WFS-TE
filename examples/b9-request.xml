@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
+  <wfs-te:DynamicFeatureQuery typeNames="aixm:VerticalStructure">
+    <fes-te:DynamicFeatureFilter>
+      <fes-te:featureFilter>
+        <fes:Filter>
+          <fes:PropertyIsEqualTo>
+            <fes:ValueReference>gml:identifier</fes:ValueReference>
+            <fes:Literal>8c755520-b42b-11e3-a5e2-0800500c9a66</fes:Literal>
+          </fes:PropertyIsEqualTo>
+        </fes:Filter>
+      </fes-te:featureFilter>
+    </fes-te:DynamicFeatureFilter>
+    <wfs-te:transformation>
+      <wfs-te:SnapshotGeneration>
+        <wfs-te:snapshotTime>
+          <gml:TimeInstant gml:id="ID_1">
+            <gml:timePosition>2012-10-11T16:30:01.857Z</gml:timePosition>
+          </gml:TimeInstant>
+        </wfs-te:snapshotTime>
+      </wfs-te:SnapshotGeneration>
+    </wfs-te:transformation>
+  </wfs-te:DynamicFeatureQuery>
+</wfs:GetFeature>

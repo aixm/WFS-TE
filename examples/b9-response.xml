@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timeStamp="2008-09-07T19:00:00" numberReturned="1" numberMatched="1">
+  <wfs:member>
+    <aixm:VerticalStructure gml:id="ID_1">
+      <gml:identifier codeSpace="urn:uuid:">8c755520-b42b-11e3-a5e2-0800500c9a66</gml:identifier>
+      <!-- omitted for brevity: featureMetadata -->
+      <aixm:timeSlice>
+        <aixm:VerticalStructureTimeSlice gml:id="ID_2">
+          <gml:validTime>
+            <gml:TimeInstant gml:id="ID_3">
+              <gml:timePosition>2012-10-11T16:30:01.857Z</gml:timePosition>
+            </gml:TimeInstant>
+          </gml:validTime>
+          <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:name>EADD_CRANE_5</aixm:name>
+          <aixm:type>CRANE</aixm:type>
+          <aixm:lighted>YES</aixm:lighted>
+          <aixm:part>
+            <aixm:VerticalStructurePart gml:id="ID_5">
+              <aixm:timeInterval>
+                <aixm:Timesheet gml:id="ID_6">
+                  <aixm:timeReference>UTC</aixm:timeReference>
+                  <aixm:day>ANY</aixm:day>
+                  <aixm:startTime>04:30</aixm:startTime>
+                  <aixm:endTime>17:29</aixm:endTime>
+                  <aixm:daylightSavingAdjust>NO</aixm:daylightSavingAdjust>
+                </aixm:Timesheet>
+              </aixm:timeInterval>
+              <aixm:verticalExtent uom="FT">85.0</aixm:verticalExtent>
+              <aixm:type>CRANE</aixm:type>
+              <aixm:mobile>YES</aixm:mobile>
+              <aixm:horizontalProjection_location>
+                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_7">
+                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                  <aixm:elevation uom="FT">858</aixm:elevation>
+                </aixm:ElevatedPoint>
+              </aixm:horizontalProjection_location>
+            </aixm:VerticalStructurePart>
+          </aixm:part>
+          <aixm:part>
+            <aixm:VerticalStructurePart gml:id="ID_8">
+              <aixm:timeInterval>
+                <aixm:Timesheet gml:id="ID_9">
+                  <aixm:timeReference>UTC</aixm:timeReference>
+                  <aixm:day>ANY</aixm:day>
+                  <aixm:startTime>00:00</aixm:startTime>
+                  <aixm:endTime>23:59</aixm:endTime>
+                  <aixm:daylightSavingAdjust>NO</aixm:daylightSavingAdjust>
+                </aixm:Timesheet>
+              </aixm:timeInterval>
+              <aixm:timeInterval>
+                <aixm:Timesheet gml:id="ID_10">
+                  <aixm:timeReference>UTC</aixm:timeReference>
+                  <aixm:day>ANY</aixm:day>
+                  <aixm:startTime>04:30</aixm:startTime>
+                  <aixm:endTime>17:29</aixm:endTime>
+                  <aixm:daylightSavingAdjust>NO</aixm:daylightSavingAdjust>
+                  <aixm:excluded>YES</aixm:excluded>
+                </aixm:Timesheet>
+              </aixm:timeInterval>
+              <aixm:verticalExtent uom="FT">0.0</aixm:verticalExtent>
+              <aixm:type>CRANE</aixm:type>
+              <aixm:mobile>YES</aixm:mobile>
+              <aixm:horizontalProjection_location>
+                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_11">
+                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                  <aixm:elevation uom="FT">858</aixm:elevation>
+                </aixm:ElevatedPoint>
+              </aixm:horizontalProjection_location>
+            </aixm:VerticalStructurePart>
+          </aixm:part>
+        </aixm:VerticalStructureTimeSlice>
+      </aixm:timeSlice>
+    </aixm:VerticalStructure>
+  </wfs:member>
+</wfs:FeatureCollection>

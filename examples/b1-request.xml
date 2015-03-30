@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
+  <wfs-te:DynamicFeatureQuery typeNames="aixm:VerticalStructure">
+    <fes-te:DynamicFeatureFilter>
+      <fes-te:featureFilter>
+        <fes:Filter>
+          <fes:PropertyIsEqualTo>
+            <fes:ValueReference>gml:identifier</fes:ValueReference>
+            <fes:Literal>e9ce3cc0-b41f-11e3-a5e2-0800200c9a66</fes:Literal>
+          </fes:PropertyIsEqualTo>
+        </fes:Filter>
+      </fes-te:featureFilter>
+    </fes-te:DynamicFeatureFilter>
+  </wfs-te:DynamicFeatureQuery>
+</wfs:GetFeature>

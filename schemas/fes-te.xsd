@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/fes-te/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/fes/2.0" schemaLocation="http://schemas.opengis.net/filter/2.0/filterAll.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/1999/xlink.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="DynamicFeatureFilter" substitutionGroup="fes:AbstractSelectionClause" type="fes-te:DynamicFeatureFilterType"/>
+  <complexType name="DynamicFeatureFilterType">
+    <complexContent>
+      <extension base="fes:AbstractSelectionClauseType">
+        <sequence>
+          <element minOccurs="0" name="timeIndicator">
+            <complexType>
+              <sequence>
+                <element ref="gml:AbstractTimeGeometricPrimitive"/>
+              </sequence>
+            </complexType>
+          </element>
+          <element name="featureFilter">
+            <complexType>
+              <sequence>
+                <element ref="fes:Filter"/>
+              </sequence>
+            </complexType>
+          </element>
+        </sequence>
+        <attribute default="false" name="evaluateSchedules" type="boolean"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DynamicFeatureFilterPropertyType">
+    <sequence minOccurs="0">
+      <element ref="fes-te:DynamicFeatureFilter"/>
+    </sequence>
+    <attributeGroup ref="xlink:simpleAttrs"/>
+  </complexType>
+</schema>
