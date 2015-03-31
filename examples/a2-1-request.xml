@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- DynamicFeatureQuery example for snapshot generation with a time slice 
+  filter Use case: Retrieve all features fulfilling a certain criteria at a 
+  point in time Category: Decision support Example: Retrieve all airports in 
+  certain area that are operational at the time of arrival -->
+<wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
+  <wfs-te:DynamicFeatureQuery typeNames="aixm:AirportHeliport">
+    <fes-te:DynamicFeatureFilter evaluateSchedules="true">
+      <fes-te:timeIndicator>
+        <gml:TimeInstant gml:id="ID_1">
+          <gml:timePosition>2011-07-12T09:11:01.857Z</gml:timePosition>
+        </gml:TimeInstant>
+      </fes-te:timeIndicator>
+      <fes-te:featureFilter>
+        <fes:Filter>
+          <fes:And>
+            <fes:DWithin>
+              <fes:ValueReference>aixm:timeSlice/*/aixm:ARP
+              </fes:ValueReference>
+              <gml:Point srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_2">
+                <gml:pos>50.9 4.34</gml:pos>
+              </gml:Point>
+              <fes:Distance uom="M">100000</fes:Distance>
+            </fes:DWithin>
+            <fes:PropertyIsEqualTo>
+              <fes:ValueReference>aixm:timeSlice/*/aixm:availability/aixm:operationalStatus
+              </fes:ValueReference>
+              <!-- the schedule is automatically evaluated at the given time -->
+              <fes:Literal>NORMAL</fes:Literal>
+            </fes:PropertyIsEqualTo>
+          </fes:And>
+        </fes:Filter>
+      </fes-te:featureFilter>
+    </fes-te:DynamicFeatureFilter>
+    <wfs-te:transformation>
+      <wfs-te:SnapshotGeneration>
+        <wfs-te:snapshotTime>
+          <gml:TimeInstant gml:id="ID_3">
+            <gml:timePosition>2011-07-12T09:11:01.857Z
+            </gml:timePosition>
+          </gml:TimeInstant>
+        </wfs-te:snapshotTime>
+      </wfs-te:SnapshotGeneration>
+    </wfs-te:transformation>
+  </wfs-te:DynamicFeatureQuery>
+</wfs:GetFeature>

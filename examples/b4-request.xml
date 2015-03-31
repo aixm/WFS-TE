@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
+  <wfs-te:DynamicFeatureQuery typeNames="aixm:VerticalStructure">
+    <fes-te:DynamicFeatureFilter>
+      <fes-te:timeIndicator>
+        <gml:TimeInstant gml:id="ID_1">
+          <gml:timePosition>2012-10-02T15:30:00.000Z</gml:timePosition>
+        </gml:TimeInstant>
+      </fes-te:timeIndicator>
+      <fes-te:featureFilter>
+        <fes:Filter>
+          <fes:And>
+            <fes:PropertyIsEqualTo>
+              <fes:ValueReference>gml:identifier</fes:ValueReference>
+              <fes:Literal>8c755520-b42b-11e3-a5e2-0800500c9a66</fes:Literal>
+            </fes:PropertyIsEqualTo>
+            <fes:PropertyIsGreaterThan>
+              <fes:ValueReference>aixm:timeSlice/*/aixm:part/*/aixm:verticalExtent</fes:ValueReference>
+              <fes:Literal>0</fes:Literal>
+            </fes:PropertyIsGreaterThan>
+          </fes:And>
+        </fes:Filter>
+      </fes-te:featureFilter>
+    </fes-te:DynamicFeatureFilter>
+  </wfs-te:DynamicFeatureQuery>
+</wfs:GetFeature>

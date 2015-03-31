@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- DynamicFeatureQuery example for retrieving relevant time slices Use 
+  case: Retrieve all time slices of a feature relevant for (i.e. affecting 
+  the state at) a point in time Category: Change-aware visualisation Example: 
+  Retrieve all time slices relevant for the time of arrival of a runway. -->
+<wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
+  <wfs-te:DynamicFeatureQuery typeNames="aixm:Runway">
+    <wfs-te:TimeSliceProjection>
+      <wfs-te:relevantTime>
+        <gml:TimeInstant gml:id="ID_1">
+          <gml:timePosition>2011-07-12T09:11:01.857Z</gml:timePosition>
+        </gml:TimeInstant>
+      </wfs-te:relevantTime>
+    </wfs-te:TimeSliceProjection>
+    <fes:Filter>
+      <fes:PropertyIsEqualTo>
+        <fes:ValueReference>gml:identifier</fes:ValueReference>
+        <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d</fes:Literal>
+      </fes:PropertyIsEqualTo>
+    </fes:Filter>
+  </wfs-te:DynamicFeatureQuery>
+</wfs:GetFeature>

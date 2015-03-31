@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timeStamp="2008-09-07T19:00:00" numberReturned="1" numberMatched="1">
+  <wfs:member>
+    <aixm:VerticalStructure gml:id="ID_1">
+      <gml:identifier codeSpace="urn:uuid:">8c755520-b42b-11e3-a5e2-0800500c9a66</gml:identifier>
+      <!-- omitted for brevity: featureMetadata and the two TEMPDELTA time slices -->
+    </aixm:VerticalStructure>
+  </wfs:member>
+</wfs:FeatureCollection>

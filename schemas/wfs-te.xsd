@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/wfs-te/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/fes-te/1.0" schemaLocation="fesTemporality.xsd"/>
+  <import namespace="http://www.opengis.net/fes/2.0" schemaLocation="http://schemas.opengis.net/filter/2.0/filterAll.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/wfs/2.0" schemaLocation="http://schemas.opengis.net/wfs/2.0/wfs.xsd"/>
+  <import namespace="http://www.w3.org/1999/xlink" schemaLocation="http://www.w3.org/1999/xlink.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element abstract="true" name="AbstractTransformationClause" type="wfs-te:AbstractTransformationClauseType"/>
+  <complexType abstract="true" name="AbstractTransformationClauseType">
+    <sequence/>
+  </complexType>
+  <complexType name="AbstractTransformationClausePropertyType">
+    <sequence minOccurs="0">
+      <element ref="wfs-te:AbstractTransformationClause"/>
+    </sequence>
+    <attributeGroup ref="xlink:simpleAttrs"/>
+  </complexType>
+  <element name="DynamicFeatureQuery" substitutionGroup="wfs:Query" type="wfs-te:DynamicFeatureQueryType"/>
+  <complexType name="DynamicFeatureQueryType">
+    <complexContent>
+      <extension base="wfs:QueryType">
+        <sequence>
+          <element minOccurs="0" name="transformation" type="wfs-te:AbstractTransformationClausePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DynamicFeatureQueryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="wfs-te:DynamicFeatureQuery"/>
+    </sequence>
+    <attributeGroup ref="xlink:simpleAttrs"/>
+  </complexType>
+  <element name="PropertyExclusion" substitutionGroup="fes:AbstractProjectionClause" type="wfs-te:PropertyExclusionType"/>
+  <complexType name="PropertyExclusionType">
+    <complexContent>
+      <extension base="fes:AbstractProjectionClauseType">
+        <sequence>
+          <element name="propertyName" type="QName"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PropertyExclusionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="wfs-te:PropertyExclusion"/>
+    </sequence>
+    <attributeGroup ref="xlink:simpleAttrs"/>
+  </complexType>
+  <element name="SnapshotGeneration" substitutionGroup="wfs-te:AbstractTransformationClause" type="wfs-te:SnapshotGenerationType"/>
+  <complexType name="SnapshotGenerationType">
+    <complexContent>
+      <extension base="wfs-te:AbstractTransformationClauseType">
+        <sequence>
+          <element name="snapshotTime">
+            <complexType>
+              <sequence>
+                <element ref="gml:AbstractTimeGeometricPrimitive"/>
+              </sequence>
+            </complexType>
+          </element>
+        </sequence>
+        <attribute default="false" name="evaluateSchedules" type="boolean"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SnapshotGenerationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="wfs-te:SnapshotGeneration"/>
+    </sequence>
+    <attributeGroup ref="xlink:simpleAttrs"/>
+  </complexType>
+  <element name="TimeSliceProjection" substitutionGroup="fes:AbstractProjectionClause" type="wfs-te:TimeSliceProjectionType"/>
+  <complexType name="TimeSliceProjectionType">
+    <complexContent>
+      <extension base="fes:AbstractProjectionClauseType">
+        <sequence>
+          <element minOccurs="0" name="relevantTime">
+            <complexType>
+              <sequence>
+                <element ref="gml:AbstractTimeGeometricPrimitive"/>
+              </sequence>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="timeSliceFilter">
+            <complexType>
+              <sequence>
+                <element ref="fes:Filter"/>
+              </sequence>
+            </complexType>
+          </element>
+        </sequence>
+        <attribute default="false" name="includeCanceled" type="boolean"/>
+        <attribute default="false" name="includeCorrected" type="boolean"/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TimeSliceProjectionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="wfs-te:TimeSliceProjection"/>
+    </sequence>
+    <attributeGroup ref="xlink:simpleAttrs"/>
+  </complexType>
+</schema>

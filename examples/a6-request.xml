@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- DynamicFeatureQuery example for retrieving and filtering PERMDELTA time 
+  slices Use case: Retrieve all PERMDELTAs of a feature valid for a time period 
+  Category: Replication Example: Retrieve all PERMDELTAs of a feature valid 
+  now or in the future. -->
+<wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
+  <wfs-te:DynamicFeatureQuery typeNames="aixm:Navaid">
+    <wfs-te:TimeSliceProjection>
+      <wfs-te:timeSliceFilter>
+        <fes:Filter>
+          <fes:And>
+            <fes:PropertyIsEqualTo>
+              <fes:ValueReference>aixm:interpretation
+              </fes:ValueReference>
+              <fes:Literal>PERMDELTA</fes:Literal>
+            </fes:PropertyIsEqualTo>
+            <fes:AnyInteracts>
+              <fes:ValueReference>gml:validTime</fes:ValueReference>
+              <gml:TimePeriod gml:id="ID_1">
+                <gml:beginPosition>2010-04-08T00:00:00.000Z
+                </gml:beginPosition>
+                <gml:endPosition/>
+              </gml:TimePeriod>
+            </fes:AnyInteracts>
+          </fes:And>
+        </fes:Filter>
+      </wfs-te:timeSliceFilter>
+    </wfs-te:TimeSliceProjection>
+    <fes-te:DynamicFeatureFilter>
+      <fes-te:featureFilter>
+        <fes:Filter>
+          <fes:PropertyIsEqualTo>
+            <fes:ValueReference>gml:identifier</fes:ValueReference>
+            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d
+            </fes:Literal>
+          </fes:PropertyIsEqualTo>
+        </fes:Filter>
+      </fes-te:featureFilter>
+    </fes-te:DynamicFeatureFilter>
+  </wfs-te:DynamicFeatureQuery>
+</wfs:GetFeature>
