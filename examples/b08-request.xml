@@ -5,8 +5,7 @@
       <wfs-te:timeSliceFilter>
         <fes:Filter>
           <fes:PropertyIsEqualTo>
-            <fes:ValueReference>aixm:interpretation
-              </fes:ValueReference>
+            <fes:ValueReference>aixm:interpretation</fes:ValueReference>
             <fes:Literal>TEMPDELTA</fes:Literal>
           </fes:PropertyIsEqualTo>
         </fes:Filter>

@@ -10,16 +10,14 @@
         <fes:Filter>
           <fes:And>
             <fes:DWithin>
-              <fes:ValueReference>aixm:valueFor('2011-07-12T09:11:01.857Z','aixm:ARP')
-              </fes:ValueReference>
+              <fes:ValueReference>aixm:valueFor('2011-07-12T09:11:01.857Z','aixm:ARP')</fes:ValueReference>
               <gml:Point srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_1">
                 <gml:pos>50.9 4.34</gml:pos>
               </gml:Point>
               <fes:Distance uom="M">100000</fes:Distance>
             </fes:DWithin>
             <fes:PropertyIsEqualTo>
-              <fes:ValueReference>aixm:valueFor('2011-07-12T09:11:01.857Z','aixm:availability/aixm:operationalStatus')
-              </fes:ValueReference>
+              <fes:ValueReference>aixm:valueFor('2011-07-12T09:11:01.857Z','aixm:availability/aixm:operationalStatus')</fes:ValueReference>
               <!-- the schedule is automatically evaluated at the given time -->
               <fes:Literal>NORMAL</fes:Literal>
             </fes:PropertyIsEqualTo>
@@ -31,8 +29,7 @@
       <wfs-te:SnapshotGeneration>
         <wfs-te:snapshotTime>
           <gml:TimeInstant gml:id="ID_2">
-            <gml:timePosition>2011-07-12T09:11:01.857Z
-            </gml:timePosition>
+            <gml:timePosition>2011-07-12T09:11:01.857Z</gml:timePosition>
           </gml:TimeInstant>
         </wfs-te:snapshotTime>
       </wfs-te:SnapshotGeneration>

@@ -10,18 +10,15 @@
         <fes:Filter>
           <fes:And>
             <fes:PropertyIsEqualTo>
-              <fes:ValueReference>aixm:interpretation
-              </fes:ValueReference>
+              <fes:ValueReference>aixm:interpretation</fes:ValueReference>
               <fes:Literal>PERMDELTA</fes:Literal>
             </fes:PropertyIsEqualTo>
             <fes:PropertyIsEqualTo>
-              <fes:ValueReference>aixm:sequenceNumber
-              </fes:ValueReference>
+              <fes:ValueReference>aixm:sequenceNumber</fes:ValueReference>
               <fes:Literal>2</fes:Literal>
             </fes:PropertyIsEqualTo>
             <fes:PropertyIsEqualTo>
-              <fes:ValueReference>aixm:correctionNumber
-              </fes:ValueReference>
+              <fes:ValueReference>aixm:correctionNumber</fes:ValueReference>
               <fes:Literal>1</fes:Literal>
             </fes:PropertyIsEqualTo>
           </fes:And>
@@ -33,8 +30,7 @@
         <fes:Filter>
           <fes:PropertyIsEqualTo>
             <fes:ValueReference>gml:identifier</fes:ValueReference>
-            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d
-            </fes:Literal>
+            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d</fes:Literal>
           </fes:PropertyIsEqualTo>
         </fes:Filter>
       </fes-te:featureFilter>

@@ -6,8 +6,7 @@
         <fes:Filter>
           <fes:PropertyIsEqualTo>
             <fes:ValueReference>gml:identifier</fes:ValueReference>
-            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d
-            </fes:Literal>
+            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d</fes:Literal>
           </fes:PropertyIsEqualTo>
         </fes:Filter>
       </fes-te:featureFilter>
@@ -16,8 +15,7 @@
       <wfs-te:SnapshotGeneration evaluateSchedules="true">
         <wfs-te:snapshotTime>
           <gml:TimeInstant gml:id="ID_1">
-            <gml:timePosition>2011-07-01T08:00:00.000Z
-            </gml:timePosition>
+            <gml:timePosition>2011-07-01T08:00:00.000Z</gml:timePosition>
           </gml:TimeInstant>
         </wfs-te:snapshotTime>
       </wfs-te:SnapshotGeneration>

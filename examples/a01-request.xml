@@ -14,8 +14,7 @@
       <wfs-te:SnapshotGeneration>
         <wfs-te:snapshotTime>
           <gml:TimeInstant gml:id="ID_1">
-            <gml:timePosition>2011-07-12T09:11:01.857Z
-            </gml:timePosition>
+            <gml:timePosition>2011-07-12T09:11:01.857Z</gml:timePosition>
           </gml:TimeInstant>
         </wfs-te:snapshotTime>
       </wfs-te:SnapshotGeneration>

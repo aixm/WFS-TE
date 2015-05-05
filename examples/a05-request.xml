@@ -11,23 +11,19 @@
         <fes:Filter>
           <fes:And>
             <fes:PropertyIsEqualTo>
-              <fes:ValueReference>aixm:interpretation
-              </fes:ValueReference>
+              <fes:ValueReference>aixm:interpretation</fes:ValueReference>
               <fes:Literal>TEMPDELTA</fes:Literal>
             </fes:PropertyIsEqualTo>
             <fes:AnyInteracts>
               <fes:ValueReference>gml:validTime</fes:ValueReference>
               <gml:TimePeriod gml:id="ID_1">
-                <gml:beginPosition>2010-04-08T00:00:00.000Z
-                </gml:beginPosition>
-                <gml:endPosition>2010-05-08T00:00:00.000Z
-                </gml:endPosition>
+                <gml:beginPosition>2010-04-08T00:00:00.000Z</gml:beginPosition>
+                <gml:endPosition>2010-05-08T00:00:00.000Z</gml:endPosition>
               </gml:TimePeriod>
             </fes:AnyInteracts>
             <fes:Not>
               <fes:PropertyIsNull>
-                <fes:ValueReference>aixm:availability
-                </fes:ValueReference>
+                <fes:ValueReference>aixm:availability</fes:ValueReference>
               </fes:PropertyIsNull>
             </fes:Not>
           </fes:And>
@@ -39,8 +35,7 @@
         <fes:Filter>
           <fes:PropertyIsEqualTo>
             <fes:ValueReference>gml:identifier</fes:ValueReference>
-            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d
-            </fes:Literal>
+            <fes:Literal>0083defb-b42e-4417-9be2-7aba2db2674d</fes:Literal>
           </fes:PropertyIsEqualTo>
         </fes:Filter>
       </fes-te:featureFilter>
