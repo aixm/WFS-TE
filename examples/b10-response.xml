@@ -1,25 +1,58 @@
-<?xml version="1.0"?>
-<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" timeStamp="2008-09-07T19:00:00" numberReturned="1" numberMatched="1">
+<?xml version='1.0' encoding='UTF-8'?>
+<wfs:FeatureCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd http://www.aixm.aero/schema/5.1 http://localhost:8080/wfs-te-test/services/wfs?SERVICE=WFS&amp;VERSION=2.0.0&amp;REQUEST=DescribeFeatureType&amp;OUTPUTFORMAT=application%2Fgml%2Bxml%3B+version%3D3.2&amp;TYPENAME=aixm:VerticalStructure&amp;NAMESPACES=xmlns(aixm,http%3A%2F%2Fwww.aixm.aero%2Fschema%2F5.1)" xmlns:wfs="http://www.opengis.net/wfs/2.0" timeStamp="2014-11-12T23:49:28Z" xmlns:gml="http://www.opengis.net/gml/3.2" numberMatched="unknown" numberReturned="0">
+  <!--NOTE: numberReturned attribute should be 'unknown' as well, but this would not validate against the current version of the WFS 2.0 schema (change upcoming). See change request (CR 144): https://portal.opengeospatial.org/files?artifact_id=43925.-->
   <wfs:member>
-    <aixm:VerticalStructure gml:id="ID_1">
+    <aixm:VerticalStructure xmlns:aixm="http://www.aixm.aero/schema/5.1" gml:id="ID_466">
       <gml:identifier codeSpace="urn:uuid:">8c755520-b42b-11e3-a5e2-0800500c9a66</gml:identifier>
-      <!-- omitted for brevity: featureMetadata -->
+      <aixm:featureMetadata>
+        <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd">
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeList="http://www.aixm.aero/schema/5.1/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+          </gmd:characterSet>
+          <gmd:contact xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MessageContact"/>
+          <gmd:dateStamp>
+            <gco:DateTime xmlns:gco="http://www.isotc211.org/2005/gco">2014-03-25T12:00:00Z</gco:DateTime>
+          </gmd:dateStamp>
+          <gmd:identificationInfo>
+            <gmd:MD_DataIdentification>
+              <gmd:citation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MessageCitation"/>
+              <gmd:abstract>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Donlon sample data; initially created by COMSOFT (www.comsoft.aero); currently maintained by Eurocontrol. This feature demonstrates combinations of properties with schedules, PERMDELTAs and TEMPDELTAs.</gco:CharacterString>
+              </gmd:abstract>
+              <gmd:pointOfContact xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MessagePOC"/>
+              <gmd:resourceConstraints xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#MessageConstraints"/>
+              <gmd:language>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">eng</gco:CharacterString>
+              </gmd:language>
+              <gmd:topicCategory>
+                <gmd:MD_TopicCategoryCode>transportation</gmd:MD_TopicCategoryCode>
+              </gmd:topicCategory>
+            </gmd:MD_DataIdentification>
+          </gmd:identificationInfo>
+        </gmd:MD_Metadata>
+      </aixm:featureMetadata>
       <aixm:timeSlice>
-        <aixm:VerticalStructureTimeSlice gml:id="ID_2">
+        <aixm:VerticalStructureTimeSlice gml:id="uuid.f6fe1740-fe95-4483-863e-2c458c701250">
           <gml:validTime>
-            <gml:TimePeriod gml:id="ID_3">
+            <gml:TimePeriod gml:id="uuid.7ed32af4-536d-44ad-8048-f1c94df30d2e">
               <gml:beginPosition>2012-10-01T05:31:00Z</gml:beginPosition>
               <gml:endPosition>2012-10-11T15:30:00Z</gml:endPosition>
             </gml:TimePeriod>
           </gml:validTime>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:featureLifetime>
+            <gml:TimePeriod gml:id="uuid.348b3ee6-90a9-4cd9-b9b4-d4a8a8675320">
+              <gml:beginPosition>2012-10-01T05:31:00Z</gml:beginPosition>
+              <gml:endPosition indeterminatePosition="unknown"/>
+            </gml:TimePeriod>
+          </aixm:featureLifetime>
           <aixm:name>EADD_CRANE_5</aixm:name>
           <aixm:type>CRANE</aixm:type>
           <aixm:lighted>YES</aixm:lighted>
           <aixm:part>
-            <aixm:VerticalStructurePart gml:id="ID_5">
+            <aixm:VerticalStructurePart gml:id="uuid.bf5f16bf-63ff-4d8e-a3f2-1ef040a01a63">
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_6">
+                <aixm:Timesheet gml:id="uuid.093fe0b1-168d-4180-a873-afb86cc6601e">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>04:30</aixm:startTime>
@@ -31,17 +64,17 @@
               <aixm:type>CRANE</aixm:type>
               <aixm:mobile>YES</aixm:mobile>
               <aixm:horizontalProjection_location>
-                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_7">
-                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                <aixm:ElevatedPoint gml:id="uuid.8fab62c8-0ef3-4b8f-8a29-547991ab69a4" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <gml:pos>52.372778 -31.942500</gml:pos>
                   <aixm:elevation uom="FT">858</aixm:elevation>
                 </aixm:ElevatedPoint>
               </aixm:horizontalProjection_location>
             </aixm:VerticalStructurePart>
           </aixm:part>
           <aixm:part>
-            <aixm:VerticalStructurePart gml:id="ID_8">
+            <aixm:VerticalStructurePart gml:id="uuid.21e8012a-a0a2-4290-a12b-ecbfd24b8f78">
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_9">
+                <aixm:Timesheet gml:id="uuid.0fc10f3a-0b38-4adf-966f-405fa7af39c4">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>00:00</aixm:startTime>
@@ -50,7 +83,7 @@
                 </aixm:Timesheet>
               </aixm:timeInterval>
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_10">
+                <aixm:Timesheet gml:id="uuid.42755507-59ac-4ae7-9b11-01019ad3189f">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>04:30</aixm:startTime>
@@ -63,8 +96,8 @@
               <aixm:type>CRANE</aixm:type>
               <aixm:mobile>YES</aixm:mobile>
               <aixm:horizontalProjection_location>
-                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_11">
-                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                <aixm:ElevatedPoint gml:id="uuid.b003ffec-a964-452f-b760-e47efb72631d" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <gml:pos>52.372778 -31.942500</gml:pos>
                   <aixm:elevation uom="FT">858</aixm:elevation>
                 </aixm:ElevatedPoint>
               </aixm:horizontalProjection_location>
@@ -73,21 +106,27 @@
         </aixm:VerticalStructureTimeSlice>
       </aixm:timeSlice>
       <aixm:timeSlice>
-        <aixm:VerticalStructureTimeSlice gml:id="ID_12">
+        <aixm:VerticalStructureTimeSlice gml:id="uuid.d288446d-b536-43ca-964a-fae8ff715169">
           <gml:validTime>
-            <gml:TimePeriod gml:id="ID_13">
+            <gml:TimePeriod gml:id="uuid.afd643ce-8300-4271-940d-168b2a8a30db">
               <gml:beginPosition>2012-10-11T15:30:00Z</gml:beginPosition>
               <gml:endPosition>2012-10-12T00:00:00Z</gml:endPosition>
             </gml:TimePeriod>
           </gml:validTime>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:featureLifetime>
+            <gml:TimePeriod gml:id="uuid.be13d7f5-d7ea-43dc-ab83-9ff49adf236f">
+              <gml:beginPosition>2012-10-01T05:31:00Z</gml:beginPosition>
+              <gml:endPosition indeterminatePosition="unknown"/>
+            </gml:TimePeriod>
+          </aixm:featureLifetime>
           <aixm:name>EADD_CRANE_5</aixm:name>
           <aixm:type>CRANE</aixm:type>
           <aixm:lighted>YES</aixm:lighted>
           <aixm:part>
-            <aixm:VerticalStructurePart gml:id="ID_15">
+            <aixm:VerticalStructurePart gml:id="uuid.e613e3fe-3eee-4ea3-8c93-7b44be2eb631">
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_16">
+                <aixm:Timesheet gml:id="uuid.567ef282-979d-4bfe-8f8f-86c59ccb9084">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>04:30</aixm:startTime>
@@ -99,17 +138,17 @@
               <aixm:type>CRANE</aixm:type>
               <aixm:mobile>YES</aixm:mobile>
               <aixm:horizontalProjection_location>
-                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_17">
-                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                <aixm:ElevatedPoint gml:id="uuid.58ccc528-7ea5-471f-94ac-cc1cbb6d6b83" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <gml:pos>52.372778 -31.942500</gml:pos>
                   <aixm:elevation uom="FT">858</aixm:elevation>
                 </aixm:ElevatedPoint>
               </aixm:horizontalProjection_location>
             </aixm:VerticalStructurePart>
           </aixm:part>
           <aixm:part>
-            <aixm:VerticalStructurePart gml:id="ID_18">
+            <aixm:VerticalStructurePart gml:id="uuid.c3f2d0db-8235-48d3-8aa4-9526bac40e3b">
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_19">
+                <aixm:Timesheet gml:id="uuid.57c7b175-4cec-4322-b1ba-5ce1f3ba9bf9">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>00:00</aixm:startTime>
@@ -118,7 +157,7 @@
                 </aixm:Timesheet>
               </aixm:timeInterval>
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_20">
+                <aixm:Timesheet gml:id="uuid.4504ab1a-ddb6-43a7-8c0a-96cdf06f425a">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>04:30</aixm:startTime>
@@ -131,8 +170,8 @@
               <aixm:type>CRANE</aixm:type>
               <aixm:mobile>YES</aixm:mobile>
               <aixm:horizontalProjection_location>
-                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_21">
-                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                <aixm:ElevatedPoint gml:id="uuid.8e587467-765c-4904-a917-0407fd90bbb4" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <gml:pos>52.372778 -31.942500</gml:pos>
                   <aixm:elevation uom="FT">858</aixm:elevation>
                 </aixm:ElevatedPoint>
               </aixm:horizontalProjection_location>
@@ -141,21 +180,27 @@
         </aixm:VerticalStructureTimeSlice>
       </aixm:timeSlice>
       <aixm:timeSlice>
-        <aixm:VerticalStructureTimeSlice gml:id="ID_22">
+        <aixm:VerticalStructureTimeSlice gml:id="uuid.b7504adb-726e-4d1e-851e-4bd553ec82e0">
           <gml:validTime>
-            <gml:TimePeriod gml:id="ID_23">
+            <gml:TimePeriod gml:id="uuid.b1635b11-801b-4ada-a603-5cf782486970">
               <gml:beginPosition>2012-10-12T00:00:00Z</gml:beginPosition>
               <gml:endPosition>2012-10-19T15:42:00Z</gml:endPosition>
             </gml:TimePeriod>
           </gml:validTime>
           <aixm:interpretation>SNAPSHOT</aixm:interpretation>
+          <aixm:featureLifetime>
+            <gml:TimePeriod gml:id="uuid.ccb12ad6-f255-413f-a196-645d6edebf50">
+              <gml:beginPosition>2012-10-01T05:31:00Z</gml:beginPosition>
+              <gml:endPosition indeterminatePosition="unknown"/>
+            </gml:TimePeriod>
+          </aixm:featureLifetime>
           <aixm:name>EADD_CRANE_5</aixm:name>
           <aixm:type>CRANE</aixm:type>
           <aixm:lighted>YES</aixm:lighted>
           <aixm:part>
-            <aixm:VerticalStructurePart gml:id="ID_25">
+            <aixm:VerticalStructurePart gml:id="uuid.669f6ee0-281f-49bb-9b10-f469b54d7c9f">
               <aixm:timeInterval>
-                <aixm:Timesheet gml:id="ID_26">
+                <aixm:Timesheet gml:id="uuid.09858280-d969-4fd6-9b81-287b385fa73c">
                   <aixm:timeReference>UTC</aixm:timeReference>
                   <aixm:day>ANY</aixm:day>
                   <aixm:startTime>00:00</aixm:startTime>
@@ -167,8 +212,8 @@
               <aixm:type>CRANE</aixm:type>
               <aixm:mobile>YES</aixm:mobile>
               <aixm:horizontalProjection_location>
-                <aixm:ElevatedPoint srsName="urn:ogc:def:crs:EPSG::4326" gml:id="ID_27">
-                  <gml:pos>52.3727777777778 -31.9425</gml:pos>
+                <aixm:ElevatedPoint gml:id="uuid.07441be2-3d11-49a6-b011-1b9ebb4f441e" srsName="urn:ogc:def:crs:EPSG::4326">
+                  <gml:pos>52.372778 -31.942500</gml:pos>
                   <aixm:elevation uom="FT">858</aixm:elevation>
                 </aixm:ElevatedPoint>
               </aixm:horizontalProjection_location>
