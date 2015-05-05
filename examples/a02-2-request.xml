@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<!-- DynamicFeatureQuery example for snapshot generation with a time slice 
-  filter Use case: Retrieve all features fulfilling a certain criteria at a 
-  point in time Category: Decision support Example: Retrieve all airports in 
+<!-- DynamicFeatureQuery example for snapshot generation with a time slice
+  filter Use case: Retrieve all features fulfilling a certain criteria at a
+  point in time Category: Decision support Example: Retrieve all airports in
   certain area that are operational at the time of arrival -->
 <wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
   <wfs-te:DynamicFeatureQuery typeNames="aixm:AirportHeliport">

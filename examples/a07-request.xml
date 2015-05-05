@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<!-- DynamicFeatureQuery example for retrieving and filtering PERMDELTA time 
-  slice Use case: Retrieve specific time slices of a feature by their unique 
-  id Category: Replication, technical verification Example: Retrieve the PERMDELTA 
+<!-- DynamicFeatureQuery example for retrieving and filtering PERMDELTA time
+  slice Use case: Retrieve specific time slices of a feature by their unique
+  id Category: Replication, technical verification Example: Retrieve the PERMDELTA
   time slice of a feature given the sequence number and correction number -->
 <wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
   <wfs-te:DynamicFeatureQuery typeNames="aixm:Navaid">

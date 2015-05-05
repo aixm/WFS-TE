@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<!-- Example for retrieving all time slices of a feature (standard WFS 2.0 
-  query, no DynamicFeatureQuery necessary) Use case: Retrieve the full history 
-  of a feature Category: Backup Example: Retrieve all time slices of a feature 
+<!-- Example for retrieving all time slices of a feature (standard WFS 2.0
+  query, no DynamicFeatureQuery necessary) Use case: Retrieve the full history
+  of a feature Category: Backup Example: Retrieve all time slices of a feature
   (BASELINEs, PERMDELTAs and TEMPDELTAs) valid at any point in time. -->
 <wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
   <wfs:Query typeNames="aixm:Navaid">

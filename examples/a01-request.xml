@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!-- DynamicFeatureQuery example for snapshot generation. Use case: Retrieve 
-  the complete state of a feature at a point in time Category: Visualisation, 
+<!-- DynamicFeatureQuery example for snapshot generation. Use case: Retrieve
+  the complete state of a feature at a point in time Category: Visualisation,
   decision support Example: Retrieve the state of a runway at the time of arrival. -->
 <wfs:GetFeature xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:wfs-te="http://www.opengis.net/wfs-te/1.0" xmlns:fes-te="http://www.opengis.net/fes-te/1.0" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1" service="WFS" version="2.0.0">
   <wfs-te:DynamicFeatureQuery typeNames="aixm:Runway">
